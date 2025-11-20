@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Consultora Boutique XYZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+    }
+    header {
+      background: #0b1f3b;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    header p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid white;
+      color: #0b1f3b;
+      background: white;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #0b1f3b;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 15px;
+    }
+    footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0b1f3b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header id="inicio">
+    <h1>Consultora Boutique XYZ</h1>
+    <p>
+      Acompañamos a empresas medianas y grandes en decisiones estratégicas
+      críticas, combinando análisis riguroso con un enfoque cercano y personalizado.
+    </p>
+    <a class="btn" href="#contacto">Hablemos</a>
+  </header>
+
+  <main class="container">
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Nos enfocamos en pocos servicios, hechos muy bien.</p>
+      <div class="services">
+        <div class="card">
+          <h3>Consultoría Estratégica</h3>
+          <p>
+            Definición de planes estratégicos, revisión de modelos de negocio
+            y apoyo en decisiones de crecimiento orgánico e inorgánico.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Finanzas Corporativas</h3>
+          <p>
+            Análisis financiero, valoración de empresas y apoyo en procesos de
+            financiamiento con bancos e inversionistas.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Transformación &amp; Ejecución</h3>
+          <p>
+            Acompañamiento en la implementación de iniciativas clave, con foco
+            en resultados medibles y gestión del cambio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Somos una consultora boutique independiente. Trabajamos con un número
+        reducido de clientes para asegurar dedicación, confidencialidad y
+        soluciones a medida.
+      </p>
+      <p>
+        Nuestro equipo combina experiencia en banca, consultoría y empresas
+        reales. Hablamos el lenguaje de los directorios, pero también el del
+        día a día de las operaciones.
+      </p>
+    </section>
+
+    <!-- CLIENTES / CASOS -->
+    <section id="clientes">
+      <h2>Clientes y experiencia</h2>
+      <ul>
+        <li>Empresas familiares en procesos de profesionalización y crecimiento.</li>
+        <li>Grupos corporativos evaluando nuevas líneas de negocio o desinversiones.</li>
+        <li>Directores financieros que requieren apoyo analítico para decisiones críticas.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Escríbenos para coordinar una reunión inicial sin costo.
+      </p>
+      <p>
+        Email: <a href="mailto:contacto@consultoraxyz.com">contacto@consultoraxyz.com</a><br />
+        Teléfono: +33 6 12 34 56 78<br />
+        Ubicación: París, Francia
+      </p>
+      <!-- FORMULARIO SUPER SIMPLE (opcional) -->
+      <form action="mailto:contacto@consultoraxyz.com" method="post" enctype="text/plain">
+        <div>
+          <label>Nombre:<br />
+            <input type="text" name="nombre" required />
+          </label>
+        </div>
+        <div>
+          <label>Email:<br />
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <div>
+          <label>Mensaje:<br />
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+        </div>
+        <div style="margin-top:10px;">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Consultora Boutique XYZ. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // Solo para actualizar el año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
